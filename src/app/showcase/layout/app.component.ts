@@ -12,11 +12,9 @@ export class AppComponent implements OnInit, OnDestroy {
     constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: any, private renderer: Renderer2, private configService: AppConfigService) {}
 
     public subscription: Subscription;
-
     public announcement: any = Announcement;
-
     public newsActive: boolean;
-
+ 
     storageKey = 'primeng';
 
     ngOnInit() {
